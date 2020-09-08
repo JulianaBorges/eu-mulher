@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: Open Sans,Arial;
+}
+
+/*
+a {
+    text-decoration: none;
+    color:#fff
+}
+*/
+header { 
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6S;
+    padding: 30px 100px;
+    opacity: 90%;
+    z-index: 100000;
+}
+header.sticky{
+    background-color: blueviolet;
+    padding: 10px 100px;
+}
+header .logo {
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:0.6s;
+}
+header ul{
+    position: : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500px;
+    transition: 0,6s;
+    
+}
+
+/*
+.logo img{
+    max-width:15px;
+    max-height:15px;
+    width: auto;
+    height: auto;
+}
+*/
+
+body.is-touch #banner {
+    background-attachment: scroll;
+	}
+
+	#banner {
+		padding: 10em 0 10em 0;
+		background-attachment: fixed;
+		background: url(../imagens/cores1.jpg);
+        background-position: center top;
+		background-size: cover;
+		line-height: 1.75;
+		text-align: center;
+        opacity: 80%;
+}
+
+    #banner:last-child {
+        margin-bottom: 0;
+		}
+
+    #banner h2 {
+        color: #ffffff;
+        display: inline-block;
+        font-size: 3.5em;
+        line-height: 1.35;
+        margin-bottom: 0.5em;
+		}
+
+    #banner p {
+        color: white;
+        font-size: 1.5em;
+        margin-bottom: 1.75em;
+        
+		}
+
+		
+@media screen and (max-width: 1280px) {
+    #banner {
+        padding: 14em 0 11em 0;
+    }
+    #banner h2 {
+        font-size: 2.5em;
+    }
+}
+
+
+
+/*Highlights*/
+
+.qualidade{
+	max-width:960px;
+	margin:90px auto;
+	display:flex;
+	flex-wrap: wrap;	
+}
+.qualidade-item{
+	flex: 1 1 300px;
+	margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+	font-size:1em;
+	color:#a4a4a4;
+	margin-bottom:20px;
+}
+.qualidade-item h2::before{ /*marcador de texto*/
+	content: '';
+	display: inline-block;
+	width:8px;
+	height:30px;
+	margin-right: 10px;
+	background:blue;
+}
+
+/*logica para adicionar mais comentarios*/
+.qualidade-item:nth-of-type(3n+1) h2::before{
+	background:#ae81ff;
+}
+.qualidade-item:nth-of-type(3n+2) h2::before{
+	background:#f9265e;
+}
+.qualidade-item:nth-of-type(3n+3) h2::before{
+	background:#66d9eb;
+} 
+/*fim do codigo do marcador de texto*/
+
+.qualidade-item p {
+	font-size: 18px;
+	line-height:1,4;
+	color:#7c7c7c;
+	
+}
+@media (max-width: 800px){
+	
+}
+/*codigo para alinha o container ao centro*/
+.newsletter{
+	background:#f7f7f7;
+	padding: 60px calc((100% - 960px) / 2);  
+	display: flex;
+	flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-info{
+	flex: 1 1 260px;
+	color:#a4a4a4;
+    display: flex;
+    justify-content: center;
+    
+}
+.newsletter-info h1{
+	font-size:3em;
+	color: #a4a4a4;
+    margin: 30px;
+}
+
+/*footer */
+
+.footer {
+	display: flex;
+	background: blueviolet;
+;
+	height: 100px;
+	align-items: center;
+}
+.footer p{
+	flex: 1;
+	text-align: center;
+	font-size:2,25em;
+	color: whitesmoke;
+}
+
+	
+
+
+
+
+
+
+
